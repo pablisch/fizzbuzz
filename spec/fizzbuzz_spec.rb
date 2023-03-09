@@ -36,4 +36,8 @@ describe "fizzbuzz" do
   it "returns 'fizzbuzz' when passed 555" do
     expect(fizzbuzz(555)).to eq 'fizzbuzz'
   end
+
+  it "returns 'number' when passed 2" do
+    expect(fizzbuzz(2)).to eq 2
+  end
 end
