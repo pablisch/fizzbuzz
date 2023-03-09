@@ -53,7 +53,11 @@ describe "fizzbuzz" do
     expect(fizzbuzz(0)).to eq 0
   end
 
-  it "returns -21 when passed -21" do
-    expect(fizzbuzz(-21)).to eq -21
+  it "returns -30 when passed -30" do
+    expect(fizzbuzz(-30)).to eq 'fizzbuzz'
+  end
+
+  it "returns 1.17 when passed 1.17" do
+    expect(fizzbuzz(1.17)).to eq 1.17
   end
 end
