@@ -40,4 +40,20 @@ describe "fizzbuzz" do
   it "returns 'number' when passed 2" do
     expect(fizzbuzz(2)).to eq 2
   end
+
+  it "returns 19 when passed 19" do
+    expect(fizzbuzz(19)).to eq 19
+  end
+
+  it "returns 7 when passed 7" do
+    expect(fizzbuzz(7)).to eq 7
+  end
+
+  it "returns 0 when passed 0" do
+    expect(fizzbuzz(0)).to eq 0
+  end
+
+  it "returns -21 when passed -21" do
+    expect(fizzbuzz(-21)).to eq -21
+  end
 end
