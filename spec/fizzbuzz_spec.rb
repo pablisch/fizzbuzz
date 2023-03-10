@@ -1,28 +1,32 @@
 require 'fizzbuzz'
 
 describe "fizzbuzz" do
-  it "returns 'fizz' when passed 3" do
-    expect(fizzbuzz(3)).to eq 'fizz'
+  describe "test that multiples of three return 'fizz'" do
+    it "returns 'fizz' when passed 3" do
+      expect(fizzbuzz(3)).to eq 'fizz'
+    end
+
+    it "returns 'fizz' when passed 18" do
+      expect(fizzbuzz(18)).to eq 'fizz'
+    end
+
+    it "returns 'fizz' when passed 333" do
+      expect(fizzbuzz(333)).to eq 'fizz'
+    end
   end
 
-  it "returns 'fizz' when passed 18" do
-    expect(fizzbuzz(18)).to eq 'fizz'
-  end
+  describe "test that multiples of five return 'buzz'" do
+    it "returns 'buzz' when passed 5" do
+      expect(fizzbuzz(5)).to eq 'buzz'
+    end
 
-  it "returns 'fizz' when passed 333" do
-    expect(fizzbuzz(333)).to eq 'fizz'
-  end
+    it "returns 'buzz' when passed 20" do
+      expect(fizzbuzz(20)).to eq 'buzz' 
+    end
 
-  it "returns 'buzz' when passed 5" do
-    expect(fizzbuzz(5)).to eq 'buzz'
-  end
-
-  it "returns 'buzz' when passed 20" do
-    expect(fizzbuzz(20)).to eq 'buzz' 
-  end
-
-  it "returns 'buzz' when passed 560" do
-    expect(fizzbuzz(560)).to eq 'buzz'
+    it "returns 'buzz' when passed 560" do
+      expect(fizzbuzz(560)).to eq 'buzz'
+    end
   end
 
   it "returns 'fizzbuzz' when passed 15" do
